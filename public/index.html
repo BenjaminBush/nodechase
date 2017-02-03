@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Game </title>
+    <script src="lib/quintus-all.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+
+        <style>
+          .players {
+            z-index: 5;
+            position: absolute;
+            padding-top: 10px;
+            padding-right: 10px;
+            right: 0;
+            text-align: right;
+            font-size: 1.5em;
+          }
+          .score {
+            z-index: 5;
+            position: absolute;
+            padding-top: 30px;
+            padding-right: 10px;
+            right: 0;
+            text-align: right;
+            font-size: 1.5em;
+          }
+        </style>
+  </head>
+  <body>
+    <span id="players" class="players"></span>
+    <span id="score" class="score"></span>
+    <a href="/chat" id="chatter" onClick="goChat()">Lobby</a>
+    <script src="/lib/require.min.js"></script>
+    <script src="src/game.js"></script>
+
+  </body>
+</html>
