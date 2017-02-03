@@ -110,6 +110,7 @@ socket.on("goChat", function(){
 setInterval(function () {
   tagged = false;
 }, 3000);
-//Listen on port 8000
-server.listen(8000);
-console.log("Multiplayer app listening on port 8000");
+//Listen on port 
+var port = process.env.PORT || 5000;
+server.listen(port);
+console.log("Multiplayer app listening on port " + port);
