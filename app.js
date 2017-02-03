@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
+var io = require('socket.io').listen(server);
 var path = require("path");
 //All game code is in application folder
 app.use(express.static(__dirname + '/public'));

@@ -1,7 +1,7 @@
 //Instantiate array of player objects
 var players = [];
 //Create a socket that connects with the server
-var socket = io.connect('http://nodechase.herokuapp.com');
+var socket = io.connect('/');
 //Declare Ui Players from the document
 var UiPlayers = document.getElementById("players");
 var chatButton = document.getElementById("chatter");
