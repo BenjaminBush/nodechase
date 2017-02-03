@@ -12,8 +12,8 @@
   },
   "main": "app.js",
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+ "scripts": {
+    "start": "node app.js"
   },
   "license": "ISC",
   "description": ""
